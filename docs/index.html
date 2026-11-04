@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Song</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="music-page">
+        <h1>My Favorite Song</h1>
+        <p class="intro">
+            Music always helps me relax and makes a long day better. Add your favorite song below
+            so visitors can listen too!
+        </p>
+
+        <section class="video-section">
+            <h2>Now Playing</h2>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                    title="My favorite music video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-note">
+                Replace <strong>VIDEO_ID_HERE</strong> in <code>docs/index.html</code> with the ID from your YouTube song link.
+            </p>
+        </section>
+
+        <section class="animation-section">
+            <h2>Music Note Animation</h2>
+            <p>Click the button to send the music note across the stage.</p>
+            <div id="animationStage" class="animation-stage">
+                <span id="musicNote" aria-hidden="true">&#9835;</span>
+            </div>
+            <button id="animateButton" class="animate-button" type="button">Play Animation</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
